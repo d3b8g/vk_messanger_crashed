@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">VKMessage</string>
+    <string name="login_hello">Добро пожаловать в VKMessage</string>
+    <string name="login_enter">Войти</string>
+    <string name="friends_search_hint">Введите имя или город</string>
+    <string name="show_no_items">У вас нет друзей</string>
+    <string name="login_error_credent">Ошибка при попытки авторизации</string>
+    <string name="friend_no_city">Нет города</string>
+    <string name="friends_error_loading">Ошибка загрузки друзей</string>
+    <string name="no_message_item">У вас нет сообщений</string>
+    <string name="login_out_string_text">Выйти</string>
+    <string name="bdate_profile">День рождения:</string>
+    <string name="city_profile">Город:</string>
+    <string name="family_status_profile">Семейное положение:</string>
+    <string name="error_load_profile">Не смог загрузить</string>
+    <string name="text_wall_placeholder">Напиши тут шедевр</string>
+    <string name="menu_item_profile">Страница</string>
+    <string name="menu_item_message">Сообщения</string>
+    <string name="menu_item_friends">Друзья</string>
+    <string name="accounts_saves_list_empty">Не сохранено аккаунтов</string>
+    <string name="accounts_saves_loading_error">Ошибка загрузки аккаунтов</string>
+    <string name="comments_not_found">Не найдены комментарии</string>
+    <string name="error_load_comments">Ошибка загрузки комментариев</string>
+    <string name="empty_list_comments">Комментарии не загружены</string>
+    <string name="logout_info_text">Вы действительно хотите выйте из своего аккаунта или хотите переключится на другой
+        аккаунт?
+    </string>
+    <string name="change_friend_name">••• Изменить имя друга </string>
+    <string name="change_enter_id">Введите ID пользователя</string>
+    <string name="change_enter_username">Введите новое имя</string>
+    <string name="change_lines_empty">Ошибка: Не заполнены поля</string>
+    <string name="error_of_add_to_changednames">Ошибка: Не смог добавить этот ID</string>
+    <string name="change_error_of_found_id">Недоступный ID</string>
+    <string name="error_remove_friend">Ошибка: Не удалось удалить друга</string>
+    <string name="error_add_friend">Ошибка: Не удалось добавить друга</string>
+    <string name="title_delete">Удалить</string>
+    <string name="title_read_all">Прочитать весь диалог</string>
+    <string name="error_load_message">Ошибка: не удалось загрузить сообщение</string>
+    <string name="error_load_history">Ошибка: не удалось загрузить сообщения.</string>
+    <string name="off_logged">Отключить логирование</string>
+    <string name="logfile_conversation_isempty">Лог-файл пустой или очищен</string>
+    <string name="wanna_to_delete_logfiles">Вы действительно хотите удалить все лог-файлы связанные с этим диалогом?
+    </string>
+    <string name="yes">Да</string>
+    <string name="clear_all_logfiles">Лог-файлы были очищены</string>
+    <string name="logging_stop">Логирование чата остановлено</string>
+    <string name="enter_id">Введите ID</string>
+    <string name="u_cant_edit_limit">Большой ID</string>
+    <string name="u_cant_use_alphabet_limit">ID не должен содержать буквы</string>
+    <string name="right_add_notify_id">Уведомления подключены</string>
+</resources>

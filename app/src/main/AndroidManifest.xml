@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="net.d3b8g.vkmessage">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+            android:name="net.d3b8g.vkmessage.helpers.MyApplication"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name="net.d3b8g.vkmessage.activities.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.vk.sdk.VKServiceActivity" android:label="ServiceActivity" android:theme="@style/VK.Transparent" />
+        <activity android:name="net.d3b8g.vkmessage.activities.FriendsActivity"/>
+        <activity android:name="net.d3b8g.vkmessage.activities.MessageActivity"/>
+        <activity android:name="net.d3b8g.vkmessage.activities.ProfileActivity"/>
+        <activity android:name="net.d3b8g.vkmessage.activities.DialogActivity" />
+        <activity android:name="net.d3b8g.vkmessage.activities.CommentsActivity"/>
+        <activity android:name="net.d3b8g.vkmessage.activities.ShowLogConversationActivity"/>
+    </application>
+
+</manifest>

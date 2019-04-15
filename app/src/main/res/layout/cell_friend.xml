@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+            android:id="@+id/layout_of_profile_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_margin="12dp"
+                    android:id="@+id/friends_civ_avatar"
+                    android:layout_width="@dimen/avatar_size"
+                    android:layout_height="@dimen/avatar_size"/>
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content"
+                              android:id="@+id/friend_txt_username"
+                              android:textSize="16dp"
+                              android:textStyle="bold"
+                              android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_marginLeft="16dp"
+                              android:id="@+id/friend_online"
+                              android:textColor="@color/vk_light_color"
+                              android:text="online"
+                              android:textStyle="bold"
+                              android:textSize="14dp"
+                              android:layout_height="wrap_content"/>
+            </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

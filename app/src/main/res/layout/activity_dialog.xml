@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--Infor Bar-->
+    <FrameLayout
+
+            android:id="@+id/dialog_usr_layout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dialog_usr_avatar"
+                android:layout_gravity="center"
+                android:layout_marginTop="-8dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+        <TextView
+                android:id="@+id/dialog_usr_name"
+                android:layout_gravity="center|bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <ImageButton
+                android:id="@+id/dialog_usr_menu"
+                android:tint="@color/vk_share_link_title_color"
+                android:background="@null"
+                android:src="@drawable/ic_more_vert"
+                android:layout_gravity="center|right"
+                android:layout_width="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="20dp"/>
+    </FrameLayout>
+    <!--Messages List-->
+    <FrameLayout
+            android:background="@color/vk_grey_color"
+            android:layout_width="match_parent"
+                 android:layout_below="@id/dialog_usr_layout"
+                android:layout_above="@id/message_panel"
+                 android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/recycler_dialog"
+                android:layout_height="match_parent"/>
+        <TextView
+                android:id="@+id/txt_dialog_message_no_items"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_height="wrap_content"/>
+        <com.github.rahatarmanahmed.cpv.CircularProgressView
+                android:id="@+id/cpv_dialogs"
+                android:layout_width="@dimen/loaded_size"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                app:cpv_color="@color/colorPrimary"
+                app:cpv_animAutostart="true"
+                app:cpv_indeterminate="true"
+                android:layout_height="@dimen/loaded_size"/>
+    </FrameLayout>
+    <!-- Tools & message_panel -->
+    <FrameLayout
+            android:id="@+id/message_panel"
+            android:background="@color/vk_white"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageButton
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="4dp"
+                android:background="@color/vk_black"
+                android:src="@drawable/ic_masks_sticker1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+        <!-- message types-->
+        <EditText
+                android:id="@+id/hint_message"
+                android:hint="Сообщение.."
+                android:gravity="left"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="38dp"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <ImageButton
+                android:id="@+id/send_message"
+                android:background="@null"
+                android:src="@drawable/ic_send"
+                android:tint="@color/vk_share_blue_color"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right|center"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+    </FrameLayout>
+</RelativeLayout>

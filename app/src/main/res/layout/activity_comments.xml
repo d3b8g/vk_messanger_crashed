@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+            android:background="@color/vk_color"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+        <TextView
+                android:id="@+id/comments_title_text"
+                android:layout_marginLeft="12dp"
+                android:textStyle="bold"
+                android:text="Комментарии"
+                android:textSize="36dp"
+                android:textColor="@color/vk_grey_color"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <ImageButton
+                android:id="@+id/comments_title_func_more"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@drawable/ic_more_vert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recylcer_comments_view"
+            android:layout_marginTop="64dp"
+            android:padding="26dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+            android:id="@+id/txt_comments_error"
+            android:text="@string/error_load_comments"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_height="wrap_content"/>
+    <com.github.rahatarmanahmed.cpv.CircularProgressView
+            android:id="@+id/cpv_comments"
+            android:layout_width="@dimen/loaded_size"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:cpv_color="@color/colorPrimary"
+            app:cpv_animAutostart="true"
+            app:cpv_indeterminate="true"
+            android:layout_height="@dimen/loaded_size"/>
+</FrameLayout>

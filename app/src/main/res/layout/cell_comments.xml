@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_margin="3dp"
+            android:id="@+id/comments_cell_avatar"
+            android:src="@color/vk_color"
+            android:layout_width="55dp"
+            android:layout_height="55dp"/>
+    <RelativeLayout
+            android:id="@+id/title_comments_usr"
+            android:layout_toRightOf="@id/comments_cell_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/comments_cell_date"
+                android:text="12/13/2001 13:43:14"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:id="@+id/comments_cell_name"
+                android:layout_marginTop="14dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Pavel Milkov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_toRightOf="@id/comments_cell_avatar"
+            android:layout_below="@id/title_comments_usr"
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+                android:id="@+id/usr_comments_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:text="да вообще пиздец"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <ImageView
+                    android:visibility="gone"
+                    android:src="@color/vk_black"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"/>
+        </RelativeLayout>
+        <TextView
+                android:id="@+id/show_thread_comments"
+                android:layout_marginTop="22dp"
+                android:textColor="@color/vk_color"
+                android:layout_below="@+id/usr_comments_first"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:text=" *** Показать ветку комментариев"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/thread_comments"
+                android:visibility="gone"
+                android:layout_below="@+id/usr_comments_first"
+                android:layout_marginTop="22dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>

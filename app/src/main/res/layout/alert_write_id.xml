@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="200dp"
+        android:background="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_height="100dp">
+    <EditText
+            android:id="@+id/notify_from_id"
+            android:layout_gravity="bottom|center"
+            android:background="@null"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="14dp"
+            android:lines="1"
+            android:hint="@string/enter_id"
+            android:maxWidth="84dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+</FrameLayout>

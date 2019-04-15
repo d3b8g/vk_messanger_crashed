@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_gravity="center"
+        android:background="@drawable/background_shape_style_small_width"
+        android:layout_width="300dp"
+        android:layout_height="150dp">
+    <TextView
+            android:layout_margin="10dp"
+            android:textSize="17dp"
+            android:text="@string/wanna_to_delete_logfiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <Button
+            android:id="@+id/agree_to_delete_logfiles"
+            android:layout_gravity="center|bottom"
+            android:text="@string/yes"
+            android:background="@null"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/red_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+</FrameLayout>

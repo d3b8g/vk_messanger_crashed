@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/only_text" android:title="Показать только текст"/>
+    <item android:id="@+id/only_my" android:title="Только мои"/>
+    <item android:id="@+id/only_them" android:title="Только чужие"/>
+    <item android:id="@+id/change_name" android:title="Изменить имя друга"/>
+    <item android:id="@+id/writting_event" android:title="Логировать события"/>
+    <item android:id="@+id/get_notify_from" android:visible="false" android:title="Получать уведомления от"/>
+    <item android:id="@+id/access_notify_conversation" android:title="Включить уведом"/>
+    <item android:id="@+id/destroy_conversation" android:title="Очистить историю"/>
+    <item android:id="@+id/show_log" android:visible="false" android:title="Показать логи"/>
+</menu>
